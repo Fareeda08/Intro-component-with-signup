@@ -1,0 +1,150 @@
+:root {
+  --Red-400: hsl(0, 100%, 74%);
+  --Green400: hsl(154, 59%, 51%);
+  --Purple700: hsl(248, 32%, 49%);
+  --Gray900: hsl(249, 10%, 26%);
+  --Purple350: hsl(246, 25%, 77%);
+}
+
+body {
+  background: url(/images/bg-intro-desktop.png);
+  background-color: var(--Red-400);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 80%; */
+  font-size: 16px;
+}
+
+.page-intro {
+  color: white;
+  width: 30%;
+  margin-right: 5rem;
+}
+
+.page-intro h1 {
+  font-size: 2.5rem;
+}
+
+.page-intro p {
+  line-height: 25px;
+}
+
+.sign-up-form {
+  width: 30%;
+}
+
+.sign-up-form .trial {
+  padding: 1rem;
+  background-color: var(--Purple700);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border: 1px solid var(--Purple700);
+  border-radius: 7px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.trial span {
+  font-weight: normal;
+}
+
+form {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 7px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+form input {
+  display: block;
+  padding: 0.8rem 2rem;
+  width: 82%;
+  margin: 1rem 0;
+  font: inherit;
+  color: var(--Purple350);
+  border: 1px solid var(--Purple350);
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  background-color: var(--Green400);
+  color: white;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: hsl(154, 57%, 45%);
+}
+
+.terms-and-conditions {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--Purple350);
+}
+
+.terms-and-conditions a {
+  color: var(--Red-400);
+  text-decoration: none;
+  font: inherit;
+  font-weight: bold;
+}
+
+@media (max-width: 75rem) {
+  body {
+    background: url(/images/bg-intro-mobile.png);
+    background-color: var(--Red-400);
+  }
+  .sign-up-form {
+    width: 40%;
+  }
+
+  .page-intro {
+    width: 35%;
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  body {
+    height: auto;
+    flex-direction: column;
+  }
+  .page-intro {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+  }
+  .sign-up-form {
+    width: auto;
+  }
+  form input {
+    width: 70vw;
+    margin: 1rem 0;
+  }
+  form input[type="submit"] {
+    width: 99%;
+  }
+}
+
+.error {
+  border-color: red;
+  color: red !important;
+  background: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+
+.error::placeholder {
+  color: #ff0000; /* Example: Red color using hex code */
+}
+
+.error-message {
+  font-style: italic;
+  text-align: right;
+  color: red;
+  margin-top: -1rem;
+}
