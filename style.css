@@ -10,7 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url(/images/bg-intro-desktop.png);
+  background: url(./images/bg-intro-desktop.png);
   background-color: var(--Red-400);
   height: 100vh;
   display: flex;
@@ -97,7 +97,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 75rem) {
   body {
-    background: url(/images/bg-intro-mobile.png);
+    background: url(./images/bg-intro-mobile.png);
     background-color: var(--Red-400);
   }
   .sign-up-form {
@@ -135,7 +135,7 @@ form input[type="submit"]:hover {
 .error {
   border-color: red;
   color: red !important;
-  background: url(/images/icon-error.svg);
+  background: url(./images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 96%;
 }
